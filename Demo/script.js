@@ -48,10 +48,15 @@ $(document).ready(function() {
 	let etatLumiere = 0
 	changerPH()
 	changerTemperature()
-	setInterval(()=>{
-		changerPH()
-		changerTemperature()
-	},1000);
+	setInterval(() => {
+	const chance = Math.floor(Math.random() * 5) + 1;
+
+	if (chance === 1) {
+		changerPH();
+		changerTemperature();
+	}
+	}, 10000);
+
 	
 	
 var lumiereSvg = document.getElementById('lumiere-svg');
