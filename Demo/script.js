@@ -49,13 +49,13 @@ $(document).ready(function() {
 	changerPH()
 	changerTemperature()
 	setInterval(() => {
-	const chance = Math.floor(Math.random() * 5) + 1;
+	const chance = Math.floor(Math.random() * 3) + 1;
 
 	if (chance === 1) {
 		changerPH();
 		changerTemperature();
 	}
-	}, 10000);
+	}, 5000);
 
 	
 	
